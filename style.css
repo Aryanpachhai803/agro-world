@@ -124,3 +124,53 @@ body{
         padding: 3px 15px;
     }
 }
+
+/*--------------------------------Footer--------------------------*/
+
+footer{
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to right,#0e8802,#5b1801);
+    color: #fff;
+    padding: 10px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+    bottom: 0;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;   
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.col ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+.col ul li a{
+     text-decoration: none;
+     color: white;
+}
+.col ul li a:hover{
+    text-decoration: underline;
+}
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+}
