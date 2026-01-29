@@ -269,20 +269,28 @@ body {
 
 /*--------------------------------Choose--------------------------*/
 
-.choose-container{
-    background-color: bisque;
-    height: 300px;
-    line-height: 60px;
+.choose-section{
     margin-top: 100px;
-    padding:70px 0 0 60px;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "one one one"
+        "two three four";    
 }
-.choose-container h1{
+.choose{
+    line-height: 50px;
+    padding-left: 50px;
+    padding-top: 30px;
+    height: 200px;
+}
+.choose h1{
     font-size: 50px;
 }
-.choose-container .detail{
+.choose .detail{
     font-size: 25px;
 }
-.choose-container .btn{
+.choose .btn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -292,11 +300,40 @@ body {
     width: 20vh;
     background-color: transparent;
 }
-.choose-container .btn:hover{
+.choose .btn:hover{
     color: white;
     background-color: black;
     transition: all 0.5s ease-in-out;
 }
+.lower{
+    border: 1px solid black;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+}
+.lower h5{
+    font-size: 17px;
+}
+.lower h1{
+    font-size: 50px;
+}
+.lower p{
+    font-size: 16px;
+    line-height: 30px;
+}
+.sustainable{
+    background-color: rgb(187, 209, 166);
+}
+.innovation{
+    color: white;
+    background-color: rgb(69, 87, 45,1);
+}
+.impact{
+    background-color: rgb(225, 246, 142);
+}
+
 /*--------------------------------Footer--------------------------*/
 
 footer {
