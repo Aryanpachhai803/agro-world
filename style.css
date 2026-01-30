@@ -191,6 +191,7 @@ body {
     /* box-shadow: 0 10px 10px rgba(0,0,0,0.5); */
     background-color: transparent;
 }
+
 .upper-text p:hover {
     color: white;
     background-color: black;
@@ -198,7 +199,7 @@ body {
 }
 
 .bg-container {
-    height: 400px;
+    height: 800px;
     background-image: url("crops.jpg");
     background-size: cover;
     background-position: center;
@@ -216,41 +217,60 @@ body {
         "two three";
 }
 
-.about-section div{
+.about-section div {
     background-color: bisque;
     border: 1px solid black;
     padding: 20px;
 }
-.about-section .one-head{
+
+.about-section .one-head {
     height: 100px;
     font-size: 30px;
     font-weight: 100;
 }
-.about-section .two-image{
+
+/* .about-section .two-image{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 800px;
-    background: url(crops.jpg);
+    background: url(greener.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+} */
+.about-section .two-image {
+    height: 800px;
+    overflow: hidden;
 }
-.about-section .three-vision{
+
+.two-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 0.15s ease-out ;
+    will-change: transform;
+}
+
+.about-section .three-vision {
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 200px;
     padding-right: 200px;
     height: 800px;
 }
-.about-section .three-vision h1{
+
+.about-section .three-vision h1 {
     font-size: 50px;
 }
-.about-section .three-vision .detail{
+
+.about-section .three-vision .detail {
     margin-top: 30px;
     font-size: 25px;
     line-height: 40px;
 }
-.about-section .three-vision .btn{
+
+.about-section .three-vision .btn {
     font-size: 20px;
     border: 0.5px solid black;
     height: 40px;
@@ -260,37 +280,42 @@ body {
     /* box-shadow: 0 10px 10px rgba(0,0,0,0.5); */
     background-color: transparent;
 }
-.about-section .three-vision .btn:hover{
+
+.about-section .three-vision .btn:hover {
     color: white;
     background-color: black;
-    transition: all 0.5s ease-in-out;    
+    transition: all 0.5s ease-in-out;
 }
 
 
 /*--------------------------------Choose--------------------------*/
 
-.choose-section{
+.choose-section {
     margin-top: 100px;
     background-color: bisque;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
         "one one one"
-        "two three four";    
+        "two three four";
 }
-.choose{
+
+.choose {
     line-height: 50px;
     padding-left: 50px;
     padding-top: 30px;
     height: 200px;
 }
-.choose h1{
+
+.choose h1 {
     font-size: 50px;
 }
-.choose .detail{
+
+.choose .detail {
     font-size: 25px;
 }
-.choose .btn{
+
+.choose .btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -300,12 +325,14 @@ body {
     width: 20vh;
     background-color: transparent;
 }
-.choose .btn:hover{
+
+.choose .btn:hover {
     color: white;
     background-color: black;
     transition: all 0.5s ease-in-out;
 }
-.lower{
+
+.lower {
     border: 1px solid black;
     padding: 100px;
     display: flex;
@@ -313,24 +340,30 @@ body {
     justify-content: center;
     height: 400px;
 }
-.lower h5{
+
+.lower h5 {
     font-size: 17px;
 }
-.lower h1{
+
+.lower h1 {
     font-size: 50px;
 }
-.lower p{
+
+.lower p {
     font-size: 16px;
     line-height: 30px;
 }
-.sustainable{
+
+.sustainable {
     background-color: rgb(187, 209, 166);
 }
-.innovation{
+
+.innovation {
     color: white;
-    background-color: rgb(69, 87, 45,1);
+    background-color: rgb(69, 87, 45, 1);
 }
-.impact{
+
+.impact {
     background-color: rgb(225, 246, 142);
 }
 
