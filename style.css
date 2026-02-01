@@ -207,33 +207,45 @@ body {
     background-attachment: fixed;
 }
 
+@media(max-width: 880px) {
+    .upper-text {
+        height: 400px;
+    }
+}
+
+
 /*-----------------------------------------------Sildeshow------------------------------------------*/
 .slideshow-container {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
 }
 
 .marquee {
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  background: rgba(0,0,0,0.5);
-  color: #fff;
-  font-size: 24px;
-  padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 0;
 }
 
 .marquee span {
-  display: inline-block;
-  animation: scrollText 10s linear infinite;
+    display: inline-block;
+    animation: scrollText 10s linear infinite;
 }
 
 @keyframes scrollText {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 /*--------------------------------About Us--------------------------*/
@@ -279,7 +291,7 @@ body {
     height: 100%;
     object-fit: cover;
     transform: scale(1);
-    transition: transform 0.15s ease-out ;
+    transition: transform 0.15s ease-out;
     will-change: transform;
 }
 
@@ -318,6 +330,36 @@ body {
     cursor: pointer;
 }
 
+@media(max-width:880px) {
+    .about-section .two-image {
+        height: 1000px;
+        overflow: hidden;
+    }
+
+    .two-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1);
+        transition: transform 0.15s ease-out;
+        will-change: transform;
+    }
+
+    .about-section .three-vision {
+        padding-top: 50px;
+        padding-right: 50px;
+        height: 1000px;
+    }
+
+    .about-section .three-vision h1 {
+        font-size: 40px;
+    }
+
+    .about-section .three-vision .detail {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
 
 /*--------------------------------Choose--------------------------*/
 
