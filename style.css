@@ -364,6 +364,7 @@ body {
 /*--------------------------------Choose--------------------------*/
 
 .choose-section {
+    width: 100%;
     margin-top: 100px;
     background-color: bisque;
     display: grid;
@@ -439,6 +440,13 @@ body {
 
 .impact {
     background-color: rgb(225, 246, 142);
+}
+
+@media(max-width:1080px) {
+    .choose-section {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /*--------------------------------Footer--------------------------*/
