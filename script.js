@@ -9,12 +9,21 @@ navbarToggle.addEventListener('click', ()=>{
 
 const img = document.querySelector('.two-image img');
 
-let scale = 1;
+let currentScale = 1;
+let targetScale = 1;
+
+const ease = 0.08; // smaller = smoother/slower
 
 window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
-  scale = 1 + scrollY / 1000; 
-  img.style.transform = `scale(${scale})`;
+  targetScale = 1 + window.scrollY / 1000;
 });
+
+function animate() {
+  currentScale += (targetScale - currentScale) * ease;
+  img.style.transform = `scale(${currentScale})`;
+  requestAnimationFrame(animate);
+}
+
+animate();
 
 
