@@ -12,7 +12,7 @@ const img = document.querySelector('.two-image img');
 let currentScale = 1;
 let targetScale = 1;
 
-const ease = 0.08; // smaller = smoother/slower
+const ease = 0.08; 
 
 window.addEventListener('scroll', () => {
   targetScale = 1 + window.scrollY / 1000;
